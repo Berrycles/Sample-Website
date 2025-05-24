@@ -1,0 +1,711 @@
+/* Reset some default browser styles */
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    
+}
+.section-fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+#home{
+    transition: opacity 1s ease-in-out;
+}
+
+
+
+
+
+
+
+/* Style for body */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #000000;
+   
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+body.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Responsive image */
+.responsive-image {
+    /* max-width: 100%;
+    height: auto; */
+    display: block;
+    margin: 0 auto;
+
+}
+.responsive{
+    /* transform: translate(465px, 0px);
+    width: auto; /* Adjust the size as needed */
+    /* height: 920px; */ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/*Specific pixel width for the home section image*/
+
+
+/* Header styling */
+header {
+    /* background: #333; */
+    color: #fff;
+    padding: 0px 0;
+    text-align: center;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.navbar-brand img {
+    /* height: 10px;
+    width: auto; */
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #ddd !important;
+}
+
+
+
+
+.link-offset-2{
+    color: #154ab6;
+    transition: color 0.5s;
+}
+
+
+
+/* Home section styling */
+.home-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    
+   
+}
+
+
+.overlay-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin-right: 1000px; */
+    color: white;
+    /* text-align: center; */
+    z-index: 1; /* Place the content above the image */
+    background: transparent; /* Add a semi-transparent background */
+    padding: 20px;
+    border-radius: 0px;
+    
+}  
+
+.home-section #yoursignup {
+    margin-top: 230px; /* Adjust the value as needed */
+    margin-left: 20px; /* Adjust the value as needed */
+    /* border-radius: 10px; /* Ensure this value is set for rounded corners */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    overflow: hidden; /* Ensure child elements respect the border radius 
+    border: 2px solid red; Add a border to visually confirm the rounded corners */
+    width: 220px; /* Set the width of the image */
+    height: auto; /* Maintain the aspect ratio */
+    z-index: 10; /* Ensure the element is above other elements */
+    position: relative; /* Ensure the z-index is applied */
+    pointer-events: auto; /* Ensure the element can receive pointer events */
+    /* margin-left: 80px; Adjust the value as needed */
+    
+    
+}
+
+
+
+
+.thumbnail-item {
+    text-align: center;
+   
+    margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.thumbnail-item img {
+   width: 280px;
+   height: 500px;
+    
+    /* object-fit: cover; */
+    /* border-radius: 50%; */
+}
+
+.thumbnail-item p {
+    color: rgb(43, 38, 69);
+    font-size: 1em;
+    margin: 0;
+    margin-top: 10px; /* Adjust the value as needed */
+    font-weight: 900;
+}
+
+#tripics{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+/* Specific styles for headertext and ptext */
+
+
+#ptext {
+    color: #ffffff; /* Bright green color */
+    font-size: 3em;
+    
+    margin-bottom: 10px; /* Add some space below the h2 */
+}
+/* Logo styling */
+.logo {
+    width: 120px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 60px; /* Adjust the spacing as needed */
+}
+.signup{
+    width: 250px; /* Adjust the size as needed */
+    height: auto;
+    /* margin-left: 60px; Adjust the spacing as needed */
+}
+/* Section styling */
+section {
+    padding: 20px;
+    margin: 0px ;/* Remove margin */
+    background: #fff;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure the section has a relative position */
+    width: 100vw; /* Full width of the viewport */
+}
+
+.thumbnail-item h1{
+    
+    color: #140d3e; 
+    /* font-size: xx-large; */
+    font-weight: 900;
+}
+
+section#Tri {
+    position: relative;
+    /* background-color:rgb(40, 208, 255); */
+
+    z-index: 1; /* Ensure the section is above the pseudo-element */
+    /* background: transparent; Make the background fully transparent */
+    border: none; /* Remove any border */
+    box-shadow: none; /* Remove any box shadow */
+   
+    padding-top: 150px;
+    padding-bottom: 150px;
+    width: 100vw; /* Full width of the viewport */
+    background-color: rgb(255, 255, 255); /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(3, 19, 123), rgb(255, 255, 255));
+}
+section#Tri2 {
+    position: relative;
+    /* background-color:rgb(40, 208, 255); */
+
+    z-index: 1; /* Ensure the section is above the pseudo-element */
+    /* background: transparent; Make the background fully transparent */
+    border: none; /* Remove any border */
+    box-shadow: none; /* Remove any box shadow */
+   
+    padding-top: 150px;
+    padding-bottom: 150px;
+    width: 100vw; /* Full width of the viewport */
+    background-color: rgb(255, 255, 255); /* For browsers that do not support gradients */
+    /* background-image: linear-gradient( rgb(255, 255, 255),rgb(20, 191, 248)); */
+}
+  
+
+#longer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px;
+}
+
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 1000px) {
+    .flex-container {
+      flex-direction: column;
+      
+    }
+}
+
+section#about .icon {
+    flex: 0; /* Allow the icon container to take up available space */
+    margin-right: 20px; /* Add some space between the text and image */
+}
+
+section#about {
+    /* height: 920; Ensure the about section has an auto height */
+    display: flex; /* Use flexbox to align items */
+    align-items: flex-start; /* Align items at the start */
+    justify-content: space-between; /* Space out the text and image */
+    padding: 0px; /* Add padding */
+    margin: 0; /* Remove margin */
+    width: 100vw; /* Full width of the viewport */
+}
+
+section#about h2 {
+    /* flex: 1; /* Allow the h2 to take up available space */
+    /* margin-right: 20px; Add some space between the text and image */ 
+    font-size: 3em;
+    color: #383175;
+    margin-bottom: 10px; /* Add some space below the h2 */
+}
+/* #longer{
+    /* height: 1150; 
+} */
+
+#about text{
+    /* transform: translate(0px, 30px); */
+
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+section#about p#abouttext {
+    margin-top: 10px; /* Add some space above the p tag */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+
+section#about img {
+    flex: 1; /* Allow the image to take up available space */
+    max-width: 50%; /* Ensure the image does not exceed half the width */
+    height: auto; /* Maintain the aspect ratio */
+    margin-left: 20px; /* Add some space to the left of the image */
+}
+
+section#about2 .icon {
+    flex: 0; /* Allow the icon container to take up available space */
+    margin-right: 20px; /* Add some space between the text and image */
+}
+
+/* Hide the image and center the text when the screen size is at the minimum point */
+@media (max-width: 768px) {
+    #skraper {
+        display: none;
+    }
+    #homepic{
+        /* display: none; */
+    }
+    
+    .home-section {
+        background-image: url('Site Pictures/smallbusiness.jpg') !important;
+        text-align: center;
+    }
+    .home-section #yoursignup{
+        margin-left: 110px; /* Reset margin-left to ensure the element stays visible */
+        margin-top: 150px; /* Adjust the value as needed */
+        /* display: block; Ensure the element is displayed */
+    }
+
+    .overlay-content{
+        transform: translate(-50%, -50%); 
+        
+        /* margin-left: 80px; */
+    }
+    #longer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #longer .col {
+        width: 100%;
+    }
+}
+@media (max-width: 1132px) {
+    #titleandtext .col-sm-4, 
+    #titleandtext .col-sm-2 {
+        flex: 0 0 100%; /* Make columns take up the full width */
+        max-width: 100%; /* Ensure columns don't exceed the container width */
+        text-align: center;
+         /* Optional: Center-align text for better appearance */
+        margin-bottom: 20px; /* Add spacing between stacked columns */
+    }
+}
+
+section#about2 {
+    /* height: 920; Ensure the about section has an auto height */
+    display: flex; /* Use flexbox to align items */
+    flex-direction: row;
+    align-items: flex-start; /* Align items at the start */
+    justify-content: space-between; /* Space out the text and image */
+    padding: 0px; /* Add padding */
+    margin: 0; /* Remove margin */
+    width: 100vw; /* Full width of the viewport */
+}
+
+section#about2 h2 {
+    /* flex: 1; /* Allow the h2 to take up available space */
+    /* margin-right: 20px; Add some space between the text and image */ 
+    font-size: 3em;
+    color: #383175;
+    margin-bottom: 10px; /* Add some space below the h2 */
+}
+
+
+/* #about2 text{
+    /* transform: translate(0px, 30px); */
+
+    /* margin-top: 10px;
+    line-height: 1.6; */
+    /*flex: 1; /* Allow the image to take up available space 
+} */
+
+section#about2 p#about2text {
+    margin-top: 10px; /* Add some space above the p tag */
+    line-height: 1.6; /* Adjust line height for better readability */
+   
+}
+
+section#about2 img {
+    flex: 1; /* Allow the image to take up available space */
+    max-width: 50%; /* Ensure the image does not exceed half the width */
+    height: auto; /* Maintain the aspect ratio */
+    margin-left: 0px; /* Add some space to the left of the image */
+}
+
+section#fqa {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.flex-container .row  {
+    margin-bottom: 40px; /* Adjust the value as needed */
+    margin-top: 40px; /* Adjust the value as needed */
+}
+
+section#fqa h2 {
+    /* flex: 1; /* Allow the h2 to take up available space */
+    /* margin-right: 20px; Add some space between the text and image */ 
+    font-size: 3em;
+    color: #383175;
+    margin-bottom: 10px; /* Add some space below the h2 */
+}
+
+section#our-team h2 {
+    /* flex: 1; /* Allow the h2 to take up available space */
+    /* margin-right: 20px; Add some space between the text and image */ 
+    font-size: 3em;
+    color: #383175;
+    margin-bottom: 10px; /* Add some space below the h2 */
+}
+
+section#our-team #pic{
+    width: 700px;
+    height: auto;
+    
+   
+}
+
+/* section#map {
+    background-color: #333;
+} */
+section#map h2 {
+    /* flex: 1; /* Allow the h2 to take up available space */
+    /* margin-right: 20px; Add some space between the text and image */ 
+    font-size: 3em;
+    color: #383175;
+    margin-bottom: 10px; /* Add some space below the h2 */
+}
+
+
+
+/* section#our-team img{
+    width: 700px;
+    height: auto;
+    
+   
+} */
+
+
+.icon{
+   
+    height: auto;
+    margin-right: 20px; /*Adjust the spacing as needed*/
+    transform: translate(40px, 300px);
+}
+
+.icon2{
+    width: 80px; /* Adjust the size as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: translate(25px, -300px);
+    
+    
+}
+
+
+/* #skraper {
+    
+    width: 100%; /* Ensure the image takes up the full width of its container*/
+    /*height: 100%; /*Maintain the aspect ratio */
+    /* max-width: 700px; /* Set a maximum width for the image */
+    /* transform: translate(1px, 0px); */ 
+    /* width: 800px;
+    height: 1000px;*/
+   /* object-fit: cover; /*Ensure the image covers the entire container*/
+/*}     */
+
+.col-sm-6 {
+    height: 100%; /* Ensure the column takes up the full height */
+}
+
+
+section#services {
+    /* height: 920; Ensure the about section has an auto height */
+    /* display: flex; Use flexbox to align items */
+    /* align-items: flex-start; Align items at the start */
+    /* justify-content: space-between; Space out the text and image */
+    padding-top: 70px; /*Add padding*/
+    padding-bottom: 70px; /*Add padding*/
+    background-color: rgb(96, 88, 141);
+    /* margin: 0; Remove margin */
+    /* width: 100vw; Full width of the viewport */
+}
+
+.card-title {
+    font-weight:  bold;
+    color: #383175;
+    font-size: 3em;
+   
+}
+
+#services1{
+    right: 1400px;
+    opacity: 0;
+}
+#services2{
+    right: 1400px;
+    opacity: 0;
+}
+#services3{
+    right: 1400px;
+    opacity: 0;
+}
+#services4{
+    left: 1400px;
+    opacity: 0;
+}
+#services5{
+    left: 1400px;
+    opacity: 0;
+}
+#services6{
+    left: 1400px;
+    opacity: 0;
+}
+
+@media (max-width: 1173px) { /* Adjust the breakpoint as needed */
+    #cards .row,
+    #cards2 .row {
+        flex-direction: column; /* Force column layout */
+        align-items: center; /* Center the cards */
+    }
+}
+
+.carousel-item{
+    /* display: none; Hide all items by default */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+}
+.carousel-item.active {
+    display: flex; /* Show the active item */
+}
+
+.carousel-item .col-sm-3 {
+    margin: 0 10px; /* Add margin between columns */
+}
+
+
+/* #carRowOne{
+    align-items: center;
+    justify-content: space-between;
+}
+#carRowTwo{
+    align-items: center;
+    justify-content: space-between;
+} */
+.carousel-control-prev{
+    color:#000000;
+}
+
+ /* .carousel-item active{
+     margin-left:200px; 
+    
+}  */
+
+/* .carouselExampleDark{
+    width: 400px;
+    height:400px;
+    
+  
+    /* margin-left: auto;
+    margin-right: auto;
+} */
+
+.carousel-caption{
+    position: static; /* Ensure captions are positioned correctly */
+    color: rgb(0, 0, 0);
+}
+
+.carousel-text{
+    margin-top: 10px; /* Add margin above the text */
+    font-size: 1em;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+}
+
+/* Default styles for the carousel buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 2; /* Ensure the buttons are above other elements */
+}
+
+/* Adjust the positioning of the carousel buttons for mobile devices */
+@media (max-width: 768px) {
+    #prev,
+    #next {
+        top: 80%; /* Adjust the value as needed to move the buttons down */
+        transform: translateY(-40%);
+    }
+
+    .carousel-caption {
+        margin-bottom: 50px; /* Add space between the text and the buttons */
+    }
+}
+
+
+section h2 {
+    margin-bottom: 10px;
+    
+}
+
+
+section p {
+    margin-bottom: 10px;
+}
+
+
+.socialimages{
+    width: 40px; 
+    height: 40px;
+    margin: 7px;
+}  
+
+#signin-up{
+    margin-bottom: 170;
+}
+
+.icon-nav{
+    color: rgb(176, 235, 255);
+}
+
+
+.Section-Text{
+    align-items: center;
+}
+
+#informationsitemap{
+    background-color:rgb(176, 235, 255) ;
+}
+
+
+
+/* #socialimage{
+    width: 20px; Adjust the size as needed
+    height: auto;
+    margin: 7px; Adjust the spacing as needed
+} */
+
+.col-sm-2 {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+    
+    
+
+}
+.logo2{
+    /* float: right; */
+    width: 180px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+
+}
+/* #logo2{
+    float:left;
+}
+#logo2text{
+    float: right;
+} */
+
+#buttomhome{
+    color: black;
+}
+#buttomabout{
+    color: black;
+}
+#buttomcontact{
+    color: black;
+}
+#buttomservices{
+    color: black;
+}
+
+/*Styles for the Attributions page*/
+#atributionsh2{
+    color: #383175;
+    font-size: 3em;
+    margin-bottom: 10px; /* Add some space below the h2 */
+}
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #f0ecec;
+    position: relative;
+    width: 100%;
+}
