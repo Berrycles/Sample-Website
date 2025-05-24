@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Your Business: Sample Webpage for Design Demo">
+    <meta name="keywords" content="web design, Bootstrap, jQuery, responsive design, business solutions, YourOrganization"> <!-- Link to your keywords -->
+    <meta name="description" content="Unleashing creativity and innovation! This sample page showcases exceptional web design skills using Bootstrap, jQuery, and modern tech to inspire and impress.">
+    <meta property="og:title" content="YourOrganization  Showcasing Exceptional Web Design Skills for Businesses & Organizations  Crafted with Bootstrap & jQuery"><!-- Link to your title for social media sharing -->
+    <meta property="og:description" content="Explore YourOrganization's captivating sample webpage! Designed with Bootstrap and jQuery, this showcase highlights innovative, responsive designs crafted for businesses and organizations."><!-- Link to your description for social media sharing  -->
+    <meta property="og:url" content="YourOrganization.html"> <!-- Link to your URL for social media sharing -->
+    <meta property="og:type" content="website"> <!--Link to your type for social media sharing -->
+    <meta property="og:site_name" content="YourOrganization"> <!-- Link to your site name for social media sharing -->
+    <meta property="og:locale" content="en_US"> <!-- Link to your locale for social media sharing -->
+    <meta property="og-image" content="Site Pictures/Logo1.png"> <!-- Link to your image for social media sharing -->
+    <meta property="og:image:alt" content="Image of YourOrganizaion's Logo."> <!-- Link to your image alt text for social media sharing -->
+    <title>Your Website</title>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@YourOrganization">
+    <meta name="twitter:title" content="YourOrganization  Showcasing Exceptional Web Design Skills for Businesses & Organizations  Crafted with Bootstrap & jQuery">
+    <meta name="twitter:description" content="Explore YourOrganization's captivating sample webpage! Designed with Bootstrap and jQuery, this showcase highlights innovative, responsive designs crafted for businesses and organizations.">
+    <meta name="twitter:image" content="Site Pictures/Logo1.png">
+    <meta name="twitter:image:alt" content="Image of YourOrganizaion's Logo.">
+    
+    <link rel="icon" href="Site Pictures/Logo1.png" type="image/png"> <!-- Link to your favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"><!-- Link to Font Awesome -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- Link to jQuery for JavaScript functionality -->
+    <link rel="canonical" href="YourOrganization.html"> <!-- Link to your canonical URL -->
+    
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="JavaScript" href="scripts2.js"> <!-- Link to your JavaScript file -->
+    <script>
+        $(document).ready(function(){
+            $("#home").animate({opacity: 1}, 1000); // Fade in effect for the page content
+                
+                
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <!-- <nav class= "navbar navbar-expand-lg bg-dark navbar-dark"></nav>
+                <div class="container">
+                    
+                        <div class="row align-items-center">
+                            <div class="col-sm-1">
+                                <a id="yourlogo" href="YourOrganization.html" >
+                                    <img src="Site Pictures/Logo1.png" alt="Logo" class="logo">
+                                </a>
+                            </div>
+                            
+                            <div class="col-sm-2"><a href="YourOrganization.html" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Home</a></div>
+                            <div class="col-sm-2"><a href="YourAboutUsPage.html" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">About</a></div>
+                            <div class="col-sm-2"><a href="#services" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Services</a></div>
+                            <div class="col-sm-2"><a href="#contact" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Contact</a></div>
+                            <div class="col-sm-3"><a id="yoursignup" href="#sighnup" >                     
+                                <img src="Site Pictures/sign-up.png" alt="Signup" class="signup">
+                                </a>
+                            </div>
+                        </div>
+                    
+                    
+                </div>
+            </nav>      -->
+
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                <div class="container">
+                    <div class="row align-items-center w-100">
+                        <div class="col-sm-2">
+                            <a id="yourlogo" href="YourOrganization.html" class="nav-link">
+                                <img src="Site Pictures/Logo1.png" alt="The organization's main logo" class="logo">
+                            </a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse col-sm-2" id="navbarNav">
+                            <!-- <div class="row align-items-center w-100"> -->
+                                <div class="col-sm-2 offset-md-0">
+                                    <a href="YourOrganization.html" class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Home</a>
+                                </div>
+                                <div class="col-sm-2 offset-md-1">
+                                    <a href="YourAboutUsPage.html" class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">About</a>
+                                </div>
+                                <div class="col-sm-2 offset-md-1">
+                                    <a href="YourServicesPage.html" class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Services</a>
+                                </div>
+                                <div class="col-sm-2 offset-md-1">
+                                    <a href="YourContactUsPage.html" class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Contact</a>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+                        <div class="col-sm-2">
+
+                            
+
+                            <a id="yoursignin" href="https://www.google.com/maps/place/Northside+Baptist+Church/@30.8557999,-83.2861695,804m/data=!3m1!1e3!4m6!3m5!1s0x88ee6707107ecd09:0xa4127d6f26ab338d!8m2!3d30.8575339!4d-83.2862306!16s%2Fg%2F1tf9z7nd?authuser=0&entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" class="nav-link">
+                                <button type="button" class="btn btn-danger btn-lg">Leave a Review</button>
+            
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+          
+    </header>
+    
+    <main>
+        <section id="home" class="home-section">
+            <div class="overlay-content justify-content-center text-center">
+               
+                <p id="ptext">This is the home section of your website.</p>
+                <a id="yoursignin" href="YourContactUsPage.html" class="nav-link">
+                    <button class="btn btn-light btn-lg" type="button">Get in Toutch</button>
+                </a>
+            </div>
+            <img class="responsive-image" id="homepic" src="Site Pictures/pexels-august-de-richelieu-4427430.jpg" alt="A picture of a corporate organization"> 
+                <div class="overlay">
+                    <div id="yoursignup" class="d-grid gap-2 col-2">
+                        
+                    </div>
+                   
+                    <!-- <a id="yoursignup" href="YourSignUpPage.html" class="nav-link">
+                        <img src="Site Pictures/sign-up.png" alt="Signup" class="signup">
+                    </a> -->
+               </div>
+                
+            
+        </section>
+
+
+
+        
+        
+        
+        <section id="Tri" >
+            <div id="tripics" class="flex-container align-items-center justify-content-center">
+                    <div class="thumbnail-item">
+                        <img src="Site Pictures/charity.jpg" alt="A picture of a charity group" class="thumbnail">
+                        <p><span class="badge text-bg-secondary">Charity</span></p>
+                    </div>
+                    <div class="thumbnail-item">
+                        <img id="mid" src="Site Pictures/productivity.jpg" alt="A picture of office workers being productive" class="thumbnail">
+                        <p><span class="badge text-bg-secondary">Productivity</span></p>
+                    </div>
+                    <div class="thumbnail-item">
+                        <img src="Site Pictures/hardhat.jpg" alt="A picture of a warehouse worker wearing a hardhat" class="thumbnail">
+                        <p><span class="badge text-bg-secondary">Hardhat</span></p> 
+                    </div>
+                    <div class="thumbnail-item ">
+                        <h1>
+                            We Design The Future 
+                        </h1> 
+                        <p>We provide quality services to all industries</p>
+                        <p> wether its banking, retail, or nonprofits.</p>
+                        <p> This sample website was crafted to </p>
+                        <p> shocase the page layout and design.</p>
+                        <p> Through traditional code, html and css was </p>
+                        <p> used to create this web application</p>
+                    </div>
+
+            </div>
+        </section>
+
+        
+
+    
+
+        <section id="about" class="about-section text-align-items-center justify-content-center">
+            <div id="longer" class="flex-container">
+                
+                <div class="col offset-md-1 text-align-items-center justify-content-center">
+                    <div class="icon2">
+                        <img class="icon" id="glass" src="Site Pictures/glass.png" alt="icon-image">
+                        <img class="icon" id="glass" src="Site Pictures/glass.png" alt="icon-image">
+                        <img class="icon" id="glass" src="Site Pictures/glass.png" alt="icon-image">
+                    </div>
+                    <h2>
+                        Innovative 
+                        solutions that
+                        drive success.
+                    </h2>
+                    <p id="abouttext">
+                        Founded in 2010, our organization has been dedicated to
+                        providing innovative solutions that drive success for 
+                        businesses worldwide. We pride ourselves on our core values
+                        of integrity, excellence, and community engagement.
+                        Located in the heart of Valdosta, we are committed to
+                        supporting the local community through various initiatives
+                        and partnerships. Our team of experts works tirelessly to
+                        deliver top-notch services that exceed our clients' expectations.
+                        Join us on our journey as we continue to make a positive
+                        impact in Valdosta and beyond.  You can have the best website designed
+                        for your needs built with HTML, CSS, JavaScript, Bootstrap,
+                        and other top web development technologies.
+                    </p>
+                </div>
+                        
+                   
+                    
+                    
+                    
+                    
+                
+            </div>    
+            <img class="" id="skraper" src="Site Pictures/skyscraper.jpg" alt="A picture of an urban skyline with skyscrapers" style="width: 683px; height: 963px;">
+
+                
+            
+        </section>
+    
+
+
+        
+        <section id="services">
+           
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-pause="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" ></button>
+                </div>
+            
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div id ="carRowOne" class="row justify-content-center">
+                            
+                                <div class="col-sm-3 ">
+                                    <img src="Site Pictures/consulting.png" alt="An icon to represent consulting services" class="d-block w-100">
+                                    <div class="carousel-caption">
+                                        <h3 class="carousel-caption">Consulting</h3>
+                                        <li class="carousel-text">Our consulting services help businesses identify opportunities for growth and efficiency. </li>
+                                        <li class="carousel-text">    We provide expert advice tailored to your specific needs and industry. </li>
+                                        <li class="carousel-text">    Partner with us to develop strategies that drive success and innovation.</li>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-3 " >
+                                    <img src="Site Pictures/support.png" alt="An icon to represent support services" class="d-block w-100">
+                                        <div class="carousel-caption">
+                                            <h3 class="carousel-caption">Support</h3>
+                                            <li class="carousel-text">Our support team is dedicated to providing timely and effective assistance. </li>
+                                            <li class="carousel-text">   We offer comprehensive support solutions to ensure your operations run smoothly. </li>
+                                            <li class="carousel-text">   Trust us to be there when you need us, with expert guidance and problem-solving.</li>
+                                        </div>
+                                </div>
+
+                                <div class="col-sm-3 ">
+                                    
+                                    <img src="Site Pictures/growth.png" alt="An icon to represent businesses growth" class="d-block w-100">
+                                        <div class="carousel-caption">
+                                            <h3 class="carousel-caption">Growth</h3>
+                                            <li class="carousel-text">We help businesses achieve sustainable growth through strategic planning and execution.</li> 
+                                            <li class="carousel-text">Our growth services are designed to identify new opportunities and optimize existing processes. </li>
+                                            <li class="carousel-text">Let us help you expand your market reach and increase profitability.</li>
+                                        </div>
+                                    
+                                
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div id ="carRowTwo" class="row justify-content-center">
+                            <div class="col-sm-3 text-center">
+                                <img src="Site Pictures/booking.png" alt="An icon to represent booking scheduling" class="d-block w-100">
+                                <div class="carousel-caption">
+                                    <h3 class="carousel-caption">Booking</h3>
+                                    <li class="carousel-text">Our booking services streamline the process for both businesses and customers.</li>
+                                    <li class="carousel-text">We offer efficient and user-friendly booking solutions to enhance your customer experience.</li>
+                                    <li class="carousel-text">Simplify your scheduling and reservations with our reliable booking system.</li>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3 text-center">
+                                <img src="Site Pictures/customer-support.png" alt="An icon to represent customer support services" class="d-block w-100">
+                                <div class="carousel-caption">
+                                    <h3 class="carousel-caption">Customer Support</h3>
+                                    <li class="carousel-text">Exceptional customer support is at the heart of our services.</li> 
+                                    <li class="carousel-text">We are committed to providing personalized assistance to meet your needs.</li> 
+                                    <li class="carousel-text">Our team is available around the clock to ensure your satisfaction and success.</li>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3 text-center">
+                                <img src="Site Pictures/trust.png" alt="An icon to show our trust worthiness" class="d-block w-100">
+                                <div class="carousel-caption">
+                                    <h3 class="carousel-caption">Trust</h3>
+                                    <li class="carousel-text">Building trust with our clients is our top priority.</li> 
+                                    <li class="carousel-text">We uphold the highest standards of integrity and transparency in all our dealings.</li> 
+                                    <li class="carousel-text">Rely on us to be a dependable partner committed to your success.</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+                
+                <button class="carousel-control-prev" type="button"  data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    
+                </button>
+            </div>
+        </section>
+        <style>
+
+            /*.media-scroller{
+                position: relative;
+                width: 90%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;*/ /*Center the Element
+                border: 2px solid red;
+
+
+            }
+            .cover {
+                overflow-x: auto;
+                display: flex;
+                flex-wrap: nowrap;
+                scroll-behavior: smooth;
+                width: 100%;
+            }
+            .cover::before{
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 0;
+                z-index: 99;
+                height: 100%;
+                width: 150px;
+                background-image: Linear-gradient(90deg, black, transparent);
+            }
+
+            .cover::after{
+                position: absolute;
+                content: "";
+                right: 0;
+                top: 0;
+                z-index: 99;
+                height: 100%;
+                width: 150px;
+                background-image: Linear-gradient(-90deg, black, transparent);
+            }
+
+            .scroll-images {
+                display: flex;
+                flex-wrap: nowrap;
+            }
+
+            .child {
+                flex: 0 0 auto;
+                margin: 10px;
+            }
+
+            .scroll-images::-webkit-scrollbar{
+                -webkit-appearance: none;
+            }
+            .child-img{
+                width: 100%;
+                height: auto;
+            }
+
+            .theicon {
+                background-color: black;
+                color: rgb(71, 255, 25);
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 1;
+                font-size: 50px;
+                outline: none;
+            }
+
+            
+
+
+            .theicon.left {
+                left: -60px;
+            }
+
+            .theicon.right {
+                right: -60px;
+            }
+            
+            .theicon:hover{
+                color: rgb(168, 182, 68);
+                
+            }  */
+            
+            
+
+        </style>
+        <!-- <script>
+            function scrollLeft() {
+                var left = document.querySelector(".scroll-images");
+                left.scrollBy({ left: -350, behavior: 'smooth' });
+            }
+
+            function scrollRight() {
+                var right = document.querySelector(".scroll-images");
+                right.scrollBy({ left: 350, behavior: 'smooth' });
+            }
+        </script> -->
+    
+        <section id="informationsitemap">
+            
+                
+
+            <div class="flex-container-fluid">
+                <div id="titleandtext" class="row ">
+                    <div class="col-sm-4 justify-content-start text-center"> 
+                        <div id="logo2">
+                            <a id="yourlogo2" href="YourOrganization.html"  class="buttonlogo" >
+                                <img src="Site Pictures/Logo1.png" alt="The organization's main logo" class="logo2">
+                                
+                            </a>
+
+                            <p >An Organization Valdosta GA By Your Organization</p>
+                        </div>
+                    
+                            
+                           
+                        
+                    </div>
+                    <div class="col-sm-2">
+                        <h1 id="title">Information</h1>
+                        <p>Hours- Monday-Friday- 9am- 5pm</p>
+                        <p>Address: 1234 First Street Valdosta GA</p>
+                        <p>Phone: 229-123-1234</p>
+                        <p>Email: info@yourorganization.com</p>
+                        
+                    </div>
+
+                    <div class="col-sm-2 ">
+                        <h1 id="title">Sitemap</h1>
+                        <a id="buttomhome"href="YourOrganization.html" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><p>Home</p></a>
+                        <a id="buttomabout"href="YourAboutUsPage.html" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><p>About</p></a>
+                        <a id="buttomservices"href="YourServicesPage.html" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><p>Services</p></a>
+                        <a id="buttomcontact"href="YourContactUsPage.html" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><p>Contact</p></a>
+                        
+                    </div>
+
+                    <div class="col-sm-4 justify-content-center">
+                        
+                        <div>
+                            <a  href="https://www.facebook.com/" class="icon-nav">
+                                <img id="" src="Site Pictures/facebook(1).svg" alt="An icon of facebook" class="socialimages">
+                            </a>
+                        
+                        
+                        
+                            <a  href="https://www.instagram.com/" class="icon-nav">
+                                <img id="" src="Site Pictures/instagram.svg" alt="An icon of instagram" class="socialimages">
+                            </a>
+                        
+                        
+                        
+                            <a  href="https://x.com/?mx=2" class="icon-nav">
+                                <img id="" src="Site Pictures/twitter-x.svg" alt="An icon of twitter-x" class="socialimages">
+                            </a>
+                        
+                        
+                        
+                            <a  href="https://www.tiktok.com/explore" class="icon-nav">
+                                <img id="" src="Site Pictures/tiktok.svg" alt="An icon of tiktok" class="socialimages">
+                            </a>
+                        </div>    
+                        <div>
+                            <p>Follow us on social media</p>
+                        </div>
+                        
+                        
+                        <!-- <div id="signin-up" >
+                            <a id="yoursignin" href="YourSignInPage.html" class="icon-nav">
+                                <button type="button" class="btn btn-primary btn-lg">Sign In</button>
+            
+                            </a>
+
+                            <a id="yoursignin" href="YourSignUpPage.html" class="icon-nav">
+                                <button type="button" class="btn btn-primary btn-lg">Sign Up</button>
+            
+                            </a>
+                        </div> -->
+                    
+                    
+                
+                
+                    </div>
+                </div>
+
+                <div id ="forsitemap" class="row justify-content-center">
+                    <div class="col-sm-3 justify-content-center text-center">
+                        
+                       
+                    </div>
+                    <div class="col-sm-3">
+                        
+                    </div>
+                    <div class="col-sm-3">
+                        
+                    </div>
+                    <div class="col-sm-3">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Website Name. All rights reserved.</p>
+        <a href="YourAtributionsPage.html">Atributions</a>
+    </footer>
+
+    <script src="scripts2.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
